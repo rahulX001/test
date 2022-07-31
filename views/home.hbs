@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<style>
+
+  body{
+    
+  background-color: rgb(225, 197, 250);
+    
+}
+#nav12{
+  background-image:url(./bg.png);
+  height: 100vh;
+}
+#heading{
+  font-family: 'Arima', cursive; 
+  text-align:center;
+   font-size:60px;
+   color: rgb(92, 8, 68);
+
+
+}
+#img1{
+  width: 100%;
+  height:auto;
+  margin:auto;
+ clear:both;
+}
+.whole{
+/* background-color: rgb(225, 197, 250); */
+margin: auto;
+width:50vw;
+text-align: left;
+
+}
+#bt2{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+}
+.tx{
+ color:black;
+  background-color:rgb(144, 213, 238);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+ ul{
+  list-style:none; 
+ }
+
+ul li::before {
+  content:"\2022  ";
+  color:rgb(29, 111, 177);
+  font-size:30px;
+ position: relative;
+ top:5px;
+ white-space: pre;
+ 
+}
+#imd{
+ text-align: center;
+ text-justify: auto;
+
+}
+ol{
+  list-style-type: none;
+  counter-reset: section;
+}
+  
+ol li::before{
+ 
+counter-increment: section;
+  content:counter(section) ".";
+  color:rgb(29, 111, 177);
+  font-size:20px;
+  font-weight:bold;
+
+}
+.navbar1{
+  position: fixed;
+  width: 100%;
+  background-color: rgb(206, 208, 43) !important; 
+}
+#effect{
+  
+  border:1px solid rgb(250, 247, 247) ;
+  /* position:relative; */
+   /* z-index:2; */
+  background-color: rgb(206, 192, 192);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#diveffect{
+  margin:20px ;
+  padding:15px;
+  background-color:rgb(144, 213, 238);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+ 
+}
+@media only screen and (max-width:820px){
+  .whole{
+    /* background-color: rgb(225, 197, 250); */
+    margin: auto;
+    width:100vw;
+    text-align: left;
+    
+    }
+    #nav12{background-image: url(./bg.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+      height: 50vh;
+    }
+    #heading{
+      font-family: 'Arima', cursive; 
+      text-align:center;
+       font-size:30px;
+       color: rgb(92, 8, 68);
+    
+    
+    }
+    #bt2{
+      position: absolute;
+      top:40%;
+      left:50%;
+      transform: translate(-50%, -60%);
+    
+    }
+
+}
+@media only screen and (min-width:820px){
+  .whole{
+    /* background-color: rgb(225, 197, 250); */
+    margin: auto;
+    width:90vw;
+    text-align: left;
+    
+    }
+    #nav12{background-image: url(./bg.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+   
+
+ }
+ 
+@media only screen and (min-width:1000px){
+  .whole{
+    /* background-color: rgb(225, 197, 250); */
+    margin: auto;
+    width:65vw;
+    text-align: left;
+    
+    }
+    #nav12{
+      background-image: url(./bg.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+    }
+
+ }
+ @media only screen and (min-width:1440px){
+  .whole{
+    /* background-color: rgb(225, 197, 250); */
+    margin: auto;
+    width:50vw;
+    text-align: left;
+    
+    }
+    #nav12{
+      background-image: url(./bg.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+ }
+
+</style>
+
+    <title>Home</title>
+  </head> 
+  <body>
+   
+
+      <div id="nav12">
+    
+      <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+        <span class="navbar-brand" >Menu</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="/login">Log In</a>
+            <a class="nav-item nav-link" href="/logup">Sign Up For Free</a>
+            <a class="nav-item nav-link" href="/about">About Me</a>
+          </div>
+        </div>
+      </nav>
+      <div id="heading">
+      What is a Bulk Email? - Definition and Guide
+      <br>
+        <h6>Get an insight into bulk emails and learn how to send them with the SendPulse marketing platform</h6><br>
+       </div>
+        <div id="bt2" >
+        <br><button type="button" class="btn-danger btn-lg" id="read" >Read <i class="fa-solid fa-arrow-down-long"></i></button>&nbsp;&nbsp;
+      <a href="/secure"> <button type="button" class="btn-danger btn-lg">Send</button></a>
+        </div>
+      </div>
+
+    <div class="card-body whole tx">
+
+      
+         
+            <p style=" font-family: 'Arima', cursive; font-size:25px;">A bulk email is a marketing message sent by a brand to multiple recipients at once. It aims to promote a business, sell goods, and develop relationships. After registering with SendPulse, you can send bulk emails for absolutely free. </p>
+            <div id="imd"><img src="./img.jpg" alt="image" id="img1"></div>
+            
+            
+
+            <div >Today, marketers prefer to use bulk email services to deliver important messages with minimal effort. Unlike junk emails sent without the recipients’ permission, bulk emails are legal marketing campaigns since the recipients subscribe to receive them. However, if bulk email marketing is not properly managed, users may consider it spam, and consequently, it may hurt sender reputation. When creating and sending bulk email campaigns, remember to adhere to the CAN-SPAM Act to avoid penalties and losses to your business.
+            </div><br><br>
+            <div id="effect">
+              <div id="diveffect"><h1> Types of Bulk Emails</h1></div>
+               <ul>
+               
+              <li>Newsletters</li>
+              <li> Promotional emails</li>
+              <li>Acquisition emails</li>
+              <li>Retention email</li>
+              </ul>
+             
+             </div>
+            <div ><ul style="padding:0%;">
+               <li>Newsletters. A newsletter is an excellent way of keeping subscribers in the loop about what’s going on with a business. In most cases, newsletters provide insights, notifications, or guides to customers in a bid to help them better understand a particular service or product.</li> 
+               <li> Promotional emails.  Bulk emails are effective at promoting sales, attracting customers with offers and deals, and building brand awareness. These emails can also be used to suggest appropriate products to existing and prospective customers.</li> 
+               <li>  Acquisition emails.  These are messages sent to acquire new customers, directed at prospects on a list who have yet to convert. They may be used to share special offers to convince potential customers to make a purchase.</li>
+               <li>  Retention emails.  These mass emails are generally sent to existing clients to encourage them to keep purchasing from your company. They aim to boost a brand’s customer loyalty.</li>
+               </ul>
+            </div>
+
+
+                      <br>
+                    <h1>What is a bulk email service?</h1>
+                      <br>
+
+                  <div>Sending thousands or tens of thousands of messages to even just a couple of email addresses would be draining due to the amount of time and effort required. Moreover, the cost of running such a campaign would not be sustainable for any business. Using a bulk email service is cheaper, faster, and much more convenient.A bulk email service is a company that allows its customers to send mass email messages to multiple lists of recipients at a specified time. With this service, you can send a single message to thousands of people on a mailing list or a personalized email to each address on a list. A bulk email service can send emails to a list of any size. Most of these providers price their offerings based on the number and frequency of the emails one wants to send. With SendPulse, users can send as many emails as they want to thousands of subscribers with different pricing plans. Sign up and get started right away.</div>
+                    <br><br>
+                <h1>Why do you need a bulk email service?</h1><br>
+              <div>A bulk email service helps marketers and online entrepreneurs avoid:
+                
+                <ul>
+                  <li> Getting labeled as spam or junk by the subscriber’s email client (for example, Gmail).</li>
+                  <li>Refusal of service by an Internet Service Provider or hosting company.</li>
+                  <li>Getting flagged by the Federal Trade Commission for breaking the CAN-SPAM Act and possibly paying a fine of a whopping $16,000 for every illegal email.
+
+                  </li>
+                  
+                </ul>
+                   
+            </div><br>
+
+
+                  <div><h1>Benefits of a Bulk Email Service </h1><br>
+                    <h6> A bulk email service:</h6>
+                    <ul>
+                      <li>Makes sure that your mass email campaign abides by the CAN-SPAM Act.</li>
+                      <li>Enables you to create subscription forms to gather new subscribers.</li>
+                      <li>Lets users manage subscriptions and opt-out processes (adding and removing from mailing lists).</li>
+                      <li> Provides email templates that are mobile-friendly and editable.</li>
+                      <li> Handles bulk email delivery.</li>
+                      <li>  Prepares reports on marketing campaign performance.</li>
+                    </ul>
+
+                        <br>
+                    <h1> What should you look for when selecting a bulk email service?</h1><br>
+                      <ul>
+                        <li>Mailing list management</li>
+                        <li>The IP address and domain reputation of the service</li>
+                        <li> Email delivery rate</li>
+                        <li> Email automation support</li>
+                        <li>Performance reports</li>
+
+
+
+                       </ul>
+       </div>
+             <div id="effect">
+              <div id="diveffect"><h1>How to Send Bulk Emails for Free</h1></div><br>
+              <ol>
+              <li>  Register with SendPulse </li>
+              <li>  Create a campaign</li>
+              <li> Choose an email template</li>
+              <li>Check and send the bulk email campaign</li>
+              <li> Monitor statistics</li>
+               
+
+              </ol>
+            </div>
+            <div>
+            A brand, business, or website that has 500 subscribers or fewer can send bulk email using SendPulse for free. These marketing emails can amount to a maximum of 15,000 monthly. Take advantage of this offer by signing up! Follow these steps to send bulk emails at no charge with SendPulse: <br><br>
+            <ol style="padding:0px;">
+           <li> Register with SendPulse. To register, fill out the personal details requested on the registration form and submit by clicking on “Sign Up.” An account is automatically created, and the user can create a marketing email campaign.
+          </li><br>
+          <li>
+            Create a campaign. Select “Create a campaign” in your account and choose the necessary mailing lists for the campaign. Choose “Use segmentation” if grouping the addresses on the list is needed. Input a “Sender’s name” and “From” address (avoid using addresses from free email providers such as Gmail or Yahoo). Don't forget to create an appealing subject line.</li><br>
+            <li>            Choose an email template. Select a suitable template for the campaign and personalize it. SendPulse offers 130+ adaptive email templates to choose from at no cost. After picking an email design, start the editing stage using our drag and drop editor. Users have the freedom to set parameters like color, font size, text style, and content for the email. Apart from that, users can add images, videos, and buttons where necessary.
+              </li><br>
+              <li>
+            Check and send the bulk email campaign. Go through all the details given to confirm that everything is as it should be, then preview the email to see how the recipient will view it. Lastly, send the bulk email or schedule the date and time to send it.
+            </li><br>
+            <li>
+            Monitor statistics. Do not forget to monitor how subscribers respond to the email campaign. These statistics are handy for improving the campaign. Check reports to get data on opened and unopened emails, delivery errors, the number of recipients who unsubscribed, clicked the links, and so on.
+            </li>
+            </ol>
+          
+          
+          </div>
+
+            <div id="effect" >
+              <div id="diveffect">
+            <h1>How to Send Bulk Emails Without Spamming and Getting Blacklisted</h1></div>
+            <br>
+              <ol >
+                <li>Verify your mailing list</li>
+                <li> Avoid adding suspicious links or attachments</li>
+                <li>Always have a plain-text email version</li>
+                <li>Include a visible unsubscribe link</li>
+                <li> Use a recognizable sender name and address</li>
+                <li> Mind the email design</li>
+                <li>Check your blacklist status and reputation 
+                   regularly</li>
+                <li>Use double opt-in</li>
+                <li>Clean your mailing list regularly</li>
+                <li>Use SPF and DKIM signatures</li>
+
+              </ol>
+              </div>
+              <div>
+             
+            The most straightforward and convenient solution to avoiding ending up in the spam folder is to use a professional email service. An email service provider takes care of all technical issues while the user concentrates on promotion and increasing brand awareness. However, for those who are handling their email marketing themselves, here are some tips to avoid ending up as spam and getting blacklisted.
+            <ul style="padding:0px;">
+           <li> Verify your mailing list. Email verification allows       marketers to check their list before sending a campaign. With the SendPulse Email Verifier, you can reveal invalid email addresses that may harm your sender reputation. After the validation, you'll get a healthy mailing list.
+            </li>
+            <li>
+            Avoid adding suspicious links or attachments. Links play a crucial role in determining the sender's reputation. So, if a link leads to a questionable site, it will most likely be blocked. The same case applies to documents and other attachments. If an email attachment has a shady title, download links to free hosting service or password-protected archives, etc., the email will be marked as spam. To avoid these issues, don’t place any links in the subject line, don’t include shortened links, and only use a reputable file hosting service.</li>
+            <li>
+            Always have a plain-text email version. Though plain text email may be useful to only a small fraction of recipients, have it in the email to avoid being flagged by spam filters.
+            Include a visible unsubscribe link. Not only is it a requirement under the CAN-SPAM Act, but it also allows recipients to unsubscribe from a brand’s emails instead of marking them as spam.</li>
+            <li>
+            Use a recognizable sender name and address. A familiar name and email address tell the recipient that you have interacted before, and there is no need to get suspicious. Don’t overdo it with email frequency. Regardless of whether they are exciting or not, sending promotional or marketing emails every day can be irritating for the subscriber receiving them. Stick to once a week or at least once a month.</li>
+            <li>
+            Mind the email design. Fonts, text style, colors, and images can tell a lot about someone. When creating a bulk email, be careful not to get these aspects wrong. Avoid things like uppercase writing, exclamation marks, too much media (images or videos), spelling mistakes, little text, or wince-worthy language.</li>
+            <li>
+            Check your blacklist status and reputation regularly. The MXToolbox is very useful for checking whether an IP or domain is blacklisted. Just enter the domain or IP address that needs to be tested and click on “Blacklist Check.” If there is a green checkmark beside the list checked against, it means the server or IP has not been found on the list.
+          </li><li>
+            Use double opt-in. Send subscription confirmation emails to new subscribers to verify that they have signed up for the brand’s emails. This process lowers unsubscribes, ensures that the addresses on the mailing list are correct, and eliminates spam complaints.</li>
+            <li>
+            Clean your mailing list regularly. If some subscribers no longer open or click or open emails sent to them and your reactivation campaign has failed to work, it is time to remove them from the mailing list. For this reason, a regular mailing list clean-up is necessary. Delete these addresses to protect brand and server reputation.</li>
+            <li>
+            Use SPF and DKIM signatures. SPF, an email validation system, allows users to dictate which devices are permitted to send emails with the domain name as registered in DNS. The receiver can verify this information to ascertain the authenticity of an email. Having a DKIM signature is also helpful as it proves that a particular email was sent from an address of a specific domain. With this signature, a brand’s emails are more likely to end up in the recipient’s inbox.</li>
+            </ul>
+          </div>
+
+
+
+
+
+          
+
+
+
+
+      </div>
+         <script>
+          let nav = document.getElementById("nav");
+          let read = document.getElementById("read");
+          // window.addEventListener('scroll',()=>{
+          //   console.log(window.pageYOffset);
+          //   console.log(window.innerWidth);
+          // })
+         
+          read.addEventListener('click',()=>{
+            if(window.innerWidth >= 819)
+            {
+            window.scrollTo(0,630);
+            }
+            else{
+            window.scrollTo(0,300);
+            }
+          })
+             
+          window.addEventListener('scroll',function(){
+            if(window.pageYOffset>=nav.offsetHeight)
+            {
+              nav.classList.add("navbar1");
+            }
+            else{
+              nav.classList.remove("navbar1");
+            }
+          });
+         
+
+
+
+
+
+         </script>
+
+
+
+
+
+
+        <!-- <div class="card-footer text-muted">
+          2 days ago
+        </div> -->
+    
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
